@@ -21,6 +21,10 @@ const users = [
 ];
 
 app.get("/count", authenticateToken, (req, res) => {
+  res.json(count);
+});
+
+app.get("/startCount", authenticateToken, (req, res) => {
   count = 0;
   res.json(count);
 });
