@@ -1,0 +1,16 @@
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "temur@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:3000/count
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwiaWF0IjoxNjgyMzIzMDU2fQ.eq7H76S1A_aewqq2jkaAIO9BGVEIwqxiP5MPknLsRUI
+
+###
+PUT http://localhost:3000/increment
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MCwiaWF0IjoxNjgyMzIzMDU2fQ.eq7H76S1A_aewqq2jkaAIO9BGVEIwqxiP5MPknLsRUI
